@@ -4,11 +4,11 @@ ElectrumX Banner Updater
 
 This script can be used to update the ElectrumX banner file to contain information about memory pool and fees.
 
-ElectrumX server: 
+ElectrumX server:
     https://github.com/kyuupichan/electrumx
-    
-Bitcoin Core daemon:
-    https://github.com/bitcoin/bitcoin
+
+Groestlcoin Core daemon:
+    https://github.com/groestlcoin/groestlcoin
 
 
 Getting Started
@@ -24,9 +24,9 @@ If you wish to change your banner you should edit ``${BANNER}.template``.
 Edit update-electrumx-banner:
 *****************************
 
-- Adjust the ``BITCOIN_DATADIR`` environment to specify where to find your bitcoin data directory.
+- Adjust the ``GROESTLCOIN_DATADIR`` environment to specify where to find your groestlcoin data directory.
 
-- Adjust the ``BITCOIN_CLI`` environment to specify where to find bitcoin-cli.
+- Adjust the ``GROESTLCOIN_CLI`` environment to specify where to find groestlcoin-cli.
 
 - Adjust the ``BANNER`` environment to specify the your electrumx banner file.
 
@@ -48,17 +48,4 @@ This script is working with the following software versions::
 
  Operating System:   Ubuntu 18.04
  ElectrumX:          1.11.0
- Bitcoin Core:       0.17.1
- Bitcoin ABC:        0.18.4
- Bitcoin SV:         0.10.0
- 
-Live Example
-------------
-
-You can see an example here: 
-    http://vps.hsmiths.com:49001/banner
-
-
-=======================================================
-
-**Samuel Smith**  shsmith@socal.rr.com   https://github.com/shsmith
+ Groestlcoin Core:   2.19.1
