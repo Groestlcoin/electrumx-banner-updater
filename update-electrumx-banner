@@ -47,7 +47,7 @@ MEMPOOL=`${GROESTLCOIN_CLI} -datadir=${GROESTLCOIN_DATADIR} getmempoolinfo | gre
 printf "there are %'d transactions in the memory pool\n" ${MEMPOOL} >> ${BANNER}.new
 
 # report last block and current height from electrumx journal
-journalctl --since "6 hours ago" -u electrumx-grs-o short-iso --utc | grep Prefetcher:new | tail -n 1 > ${TFILE}
+journalctl --since "6 hours ago" -u electrumx-grs -o short-iso --utc | grep Prefetcher:new | tail -n 1 > ${TFILE}
 if [ `wc -c < ${TFILE}` -gt 10 ]; then
 	block_height=`< ${TFILE} awk '{print $7}'`
 	block_time=`< ${TFILE} awk '{print $1}'`
