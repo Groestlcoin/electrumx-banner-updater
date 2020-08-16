@@ -12,7 +12,7 @@ GROESTLCOIN_DATADIR=~/.groestlcoin
 
 # specify the location of your electrumx banner file
 # note: uses %{BANNER}.template as the template (top portion) of each banner update
-BANNER=~/.electrumx/banner
+BANNER=/home/electrum-grs/banner
 
 # specify path to electrumx_rpc.py (.py removed as of 1.5)
 ELECTRUMX_RPC=/usr/local/bin/electrumx_rpc
