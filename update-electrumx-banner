@@ -35,8 +35,8 @@ ${ELECTRUMX_RPC} getinfo > $TFILE
 mySessions=`grep \"count\" $TFILE | grep -o '[0-9]*'`
 goodPeers=`grep good $TFILE | grep -o '[0-9]*'`
 
-echo There are currently ${goodPeers} public electrum servers. >> ${BANNER}.new
-echo This server has ${mySessions} anonymous electrum connections. >> ${BANNER}.new
+echo There are currently ${goodPeers} public electrumx-grs servers. >> ${BANNER}.new
+echo This server has ${mySessions} anonymous electrumx-grs connections. >> ${BANNER}.new
 echo "" >> ${BANNER}.new
 
 # timestamp
