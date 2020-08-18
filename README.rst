@@ -15,8 +15,7 @@ Getting Started
 ---------------
 
 
-``sudo apt-get install curl -y && touch /home/electrum-grs/banner && cd /root && git clone https://github.com/Groestlcoin/electrumx-banner-updater && cd electrumx-banner-updater && chmod +x update-electrumx-banner && ./update-electrumx-banner
-nano /etc/electrumx-grs.conf``
+``sudo apt-get install curl -y && touch /home/electrum-grs/banner && cd /root && git clone https://github.com/Groestlcoin/electrumx-banner-updater && cd electrumx-banner-updater && chmod +x update-electrumx-banner && ./update-electrumx-banner && nano /etc/electrumx-grs.conf``
 
 Add this:
 BANNER_FILE=/home/electrum-grs/banner
