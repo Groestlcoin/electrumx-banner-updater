@@ -2,10 +2,10 @@
 ElectrumX Banner Updater
 ------------------------
 
-This script can be used to update the ElectrumX banner file to contain information about memory pool and fees.
+This script can be used to update the ElectrumX banner file to contain information about memory pool.
 
 ElectrumX server:
-    https://github.com/kyuupichan/electrumx
+    https://github.com/Groestlcoin/electrumx
 
 Groestlcoin Core daemon:
     https://github.com/groestlcoin/groestlcoin
