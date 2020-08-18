@@ -13,6 +13,17 @@ Groestlcoin Core daemon:
 
 Getting Started
 ---------------
+``sudo apt-get install curl -y``
+``touch /home/electrum-grs/banner && cd /root && git clone https://github.com/Groestlcoin/electrumx-banner-updater && cd electrumx-banner-updater && chmod +x update-electrumx-banner && ./update-electrumx-banner ``
+``nano /etc/electrumx-grs.conf``
+
+Add this:
+BANNER_FILE=/home/electrum-grs/banner
+
+Also make sure this line is present:
+SERVICES=tcp://:51001,ssl://:51002,wss://:51004,rpc://
+
+Save and close the editor and restart electrumx: ``service electrumx-grs restart``
 
 The first time you run this script your original banner file will be copied to ``${BANNER}.template``.
 
