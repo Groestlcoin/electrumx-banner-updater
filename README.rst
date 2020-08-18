@@ -52,7 +52,7 @@ Run ``crontab -e`` and add a cron job to update the banner every 2 minutes.
 
 ::
 
-    */2 * * * *  /path/to/update-electrumx-banner
+    */2 * * * *  /root/electrumx-banner-updater/update-electrumx-banner
 
 
 Versions
