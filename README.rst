@@ -26,7 +26,7 @@ BANNER_FILE=/home/electrum-grs/banner
 Also make sure this line is present:
 SERVICES=tcp://:51001,ssl://:51002,wss://:51004,rpc://
 
-Save and close the editor and restart electrumx: ``service electrumx-grs restart
+Save and close the editor and restart electrumx: service electrumx-grs restart
 
 Template:
 *********
